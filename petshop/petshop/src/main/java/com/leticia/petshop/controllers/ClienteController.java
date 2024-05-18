@@ -39,9 +39,10 @@ return ResponseEntity.status(HttpStatus.CREATED).body(clienteService.criarClient
 public ResponseEntity<Cliente>atualizarCliente(@PathVariable Long id, @RequestBody Cliente cliente){
 return ResponseEntity.status(HttpStatus.OK).body(clienteService.atualizarCliente(id, cliente));	
 }
-@DeleteMapping("clientes/{id}")
+@DeleteMapping("/clientes/{id}")
 public ResponseEntity<Object> excluirCliente(@PathVariable Long id ){
-return ResponseEntity.status(HttpStatus.OK).body("Cliente excluído com sucesso");	
+	clienteService.excluirCliente(id);
+	return ResponseEntity.status(HttpStatus.OK).body("Cliente excluído com sucesso");	
 }
 	
 }

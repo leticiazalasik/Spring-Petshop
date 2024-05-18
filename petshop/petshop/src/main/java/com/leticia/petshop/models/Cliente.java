@@ -10,16 +10,16 @@ public class Cliente {
 
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
-	private Long idCliente; 
+	private Long id_Cliente; 
 	private String nome; 
 	private String especie; 
 	private String raca; 
 	private Double peso;
 	public Long getIdCliente() {
-		return idCliente;
+		return id_Cliente;
 	}
-	public void setIdCliente(Long idCliente) {
-		this.idCliente = idCliente;
+	public void setIdCliente(Long id_Cliente) {
+		this.id_Cliente = id_Cliente;
 	}
 	public String getNome() {
 		return nome;

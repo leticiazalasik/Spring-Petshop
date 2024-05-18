@@ -30,6 +30,6 @@ return clienteRepository.save(cliente);
 
 public void excluirCliente(Long id) { 
 	clienteRepository.deleteById(id);
-	System.out.println("Ecluidno cliente de ID: "+ id);
+	System.out.println("Excluidno cliente de ID: "+ id);
 }
 }
